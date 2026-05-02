@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Studio in Transit — An architectural studio rooted in place, evolving with time. A new architectural journey is unfolding.">
+  <meta name="keywords" content="architecture, design studio, modern architecture, studio in transit, architectural firm">
+  <meta name="author" content="Studio in Transit">
+  <meta name="theme-color" content="#080807">
+  <meta property="og:title" content="Studio in Transit — Architecture in Evolution">
+  <meta property="og:description" content="Rooted in place, Evolving with time. A new architectural journey is unfolding.">
+  <meta property="og:type" content="website">
+  <title>Studio in Transit — Architecture in Evolution</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Film grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Cursor glow (desktop only) -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- ── HERO ────────────────────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="hero-bg parallax-bg" data-speed="0.35"></div>
+    <div class="hero-overlay"></div>
+
+    <!-- Floating geometric lines -->
+    <div class="hero-geometry" aria-hidden="true">
+      <svg class="geo-line geo-1" viewBox="0 0 200 200" fill="none">
+        <line x1="0" y1="100" x2="200" y2="100" stroke="rgba(192,144,80,0.12)" stroke-width="0.5"/>
+      </svg>
+      <svg class="geo-line geo-2" viewBox="0 0 200 200" fill="none">
+        <line x1="100" y1="0" x2="100" y2="200" stroke="rgba(192,144,80,0.08)" stroke-width="0.5"/>
+      </svg>
+      <svg class="geo-line geo-3" viewBox="0 0 300 300" fill="none">
+        <rect x="50" y="50" width="200" height="200" stroke="rgba(192,144,80,0.06)" stroke-width="0.5"/>
+      </svg>
+    </div>
+
+    <div class="hero-content">
+      <p class="eyebrow fade-in" data-delay="300">Architectural Studio &middot; Est. 2026</p>
+      <h1 class="hero-title fade-in" data-delay="500">
+        Studio<br>
+        <em>in Transit</em>
+      </h1>
+      <div class="title-rule fade-in" data-delay="800"></div>
+      <p class="hero-tagline fade-in" data-delay="1000">Rooted in place, Evolving with time.</p>
+      <p class="hero-sub fade-in" data-delay="1150">A new architectural journey is unfolding.</p>
+      <button class="btn-primary fade-in" data-delay="1350" id="heroCta" onclick="smoothScroll('contact')">
+        <span class="btn-text">Stay Connected</span>
+        <span class="btn-arrow">&rarr;</span>
+      </button>
+    </div>
+
+    <div class="scroll-hint fade-in" data-delay="2000" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-bar"></div>
+    </div>
+  </section>
+
+  <!-- ── PHILOSOPHY ──────────────────────────────── -->
+  <section class="philosophy" id="philosophy">
+    <div class="philosophy-image parallax-bg" data-speed="0.2"></div>
+    <div class="philosophy-image-overlay"></div>
+
+    <div class="philosophy-inner">
+      <p class="section-label reveal">Our Philosophy</p>
+
+      <blockquote class="philosophy-quote reveal">
+        &ldquo;Architecture is not about building structures &mdash;<br>
+        it is about shaping the experience<br>
+        of being alive within them.&rdquo;
+      </blockquote>
+
+      <div class="philosophy-body reveal">
+        <p>We exist at the intersection of movement and permanence. Studio in Transit draws from deep architectural tradition while refusing to be anchored to it. Every project is a living thing — shaped by its context, refined by its inhabitants, and always in a state of becoming.</p>
+        <p>We believe in spaces that carry memory while inviting change. In forms that are rooted and yet restless. In design that earns its place quietly — and then outlasts everything around it.</p>
+      </div>
+
+      <div class="philosophy-pillars reveal">
+        <div class="pillar">
+          <span class="pillar-number">01</span>
+          <span class="pillar-word">Rooted</span>
+          <span class="pillar-desc">in tradition</span>
+        </div>
+        <div class="pillar-sep"></div>
+        <div class="pillar">
+          <span class="pillar-number">02</span>
+          <span class="pillar-word">Shaped</span>
+          <span class="pillar-desc">by context</span>
+        </div>
+        <div class="pillar-sep"></div>
+        <div class="pillar">
+          <span class="pillar-number">03</span>
+          <span class="pillar-word">Moving</span>
+          <span class="pillar-desc">always forward</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── IN PROGRESS ─────────────────────────────── -->
+  <section class="in-progress" id="progress">
+    <div class="progress-bg parallax-bg" data-speed="0.3"></div>
+    <div class="progress-overlay"></div>
+
+    <!-- Blueprint grid overlay -->
+    <div class="blueprint-grid" aria-hidden="true"></div>
+
+    <!-- Moving lines animation -->
+    <div class="motion-lines" aria-hidden="true">
+      <div class="mline ml1"></div>
+      <div class="mline ml2"></div>
+      <div class="mline ml3"></div>
+      <div class="mline ml4"></div>
+      <div class="mline ml5"></div>
+    </div>
+
+    <div class="in-progress-inner">
+      <p class="section-label light reveal">Studio Status</p>
+      <h2 class="progress-headline reveal">
+        We are shaping<br><em>something remarkable.</em>
+      </h2>
+      <p class="progress-sub reveal">Design is in motion.</p>
+
+      <!-- Animated progress bar -->
+      <div class="build-progress reveal" id="buildProgress">
+        <div class="build-track">
+          <div class="build-fill" id="buildFill"></div>
+        </div>
+        <div class="build-labels">
+          <span>Foundations</span>
+          <span class="build-pct" id="buildPct">0%</span>
+          <span>Launch</span>
+        </div>
+      </div>
+
+      <!-- Pulsing markers -->
+      <div class="pulse-markers reveal">
+        <div class="pulse-dot active">
+          <span class="dot-ring"></span>
+          <span class="dot-label">Vision</span>
+        </div>
+        <div class="pulse-line done"></div>
+        <div class="pulse-dot active">
+          <span class="dot-ring"></span>
+          <span class="dot-label">Design</span>
+        </div>
+        <div class="pulse-line active-line"></div>
+        <div class="pulse-dot">
+          <span class="dot-ring"></span>
+          <span class="dot-label">Build</span>
+        </div>
+        <div class="pulse-line"></div>
+        <div class="pulse-dot">
+          <span class="dot-ring"></span>
+          <span class="dot-label">Launch</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ─────────────────────────────────── -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <p class="section-label reveal">Get in Touch</p>
+      <h2 class="contact-headline reveal">
+        Let&rsquo;s begin<br><em>a conversation.</em>
+      </h2>
+      <div class="contact-grid reveal">
+        <div class="contact-item" id="contact-email">
+          <span class="contact-icon">&#9993;</span>
+          <span class="contact-label">Email</span>
+          <a class="contact-value" href="mailto:anuragrathi.ar@gmail.com">anuragrathi.ar@gmail.com</a>
+        </div>
+        <div class="contact-item" id="contact-phone">
+          <span class="contact-icon">&#9742;</span>
+          <span class="contact-label">Phone</span>
+          <a class="contact-value" href="tel:+919689751573">+91 968 975 1573</a>
+        </div>
+        <div class="contact-item" id="contact-studio">
+          <span class="contact-icon">&#9673;</span>
+          <span class="contact-label">Studio</span>
+          <span class="contact-value">Raipur, Chhattisgarh</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ──────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-brand">Studio <em>in Transit</em></span>
+
+      <span class="footer-copy">&copy; 2026 &middot; All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
